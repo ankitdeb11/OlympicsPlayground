@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading-main">Javascript Challenge - Color Table</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="color1">1</td>
+                    <td class="color2">2</td>
+                    <td class="color3">3</td>
+                </tr>
+                <tr>
+                    <td class="color4">4</td>
+                    <td class="color5">5</td>
+                    <td class="color6">6</td>
+                </tr>
+                <tr>
+                    <td class="color7">7</td>
+                    <td class="color8">8</td>
+                    <td class="color9">9</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-container">
+            <label class="enter-number" for="numberInput">Enter a number between 1 and 9:</label>
+            <input type="number" id="numberInput" min="1" max="9" onchange="updateColor()">
+            <button class="btn-submit" type="button" onclick="showColor()">Submit</button>
+        </div>
+        <div class="output-container">
+            <div class="color-box" id="colorOutput"></div>
+            <p id="colorText"></p>
+        </div>
+        <div class="sphere-container">
+            <div class="sphere" id="sphere"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
